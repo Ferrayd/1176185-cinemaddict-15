@@ -22,7 +22,7 @@ render(siteMainElement, createMenu(), 'afterBegin');
 render(header, createTitle(), 'beforeEnd');
 render(siteMainElement, createList(), 'beforeEnd');
 render(footer, createFooterStatistic(), 'beforeEnd');
-render(body, createPopup(), 'beforeEnd')
+render(body, createPopup(), 'beforeEnd');
 
 const containerOne = document.querySelector('.films-list__container-one');
 const containerTwo = document.querySelector('.films-list__container-two');
