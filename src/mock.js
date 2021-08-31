@@ -211,3 +211,4 @@ export const getRandomFilm = (numberOfMovies) => {
 };
 
 export const moviesData = getRandomFilm(NUMBER_OF_MOVIES);
+export const commentsData = getRandomCommentsData(MAX_COMMENTS_NUMBER);

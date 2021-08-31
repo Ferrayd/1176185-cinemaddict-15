@@ -2,7 +2,7 @@ import {shortDescription, reformatDate} from '../format/format.js';
 
 export const createCard = (film) => {
   const MAX_DESCRIPTION_LENGTH = 140;
-  const {comments, filmInfo, userDetails} = film;
+  const {filmInfo} = film;
   ` <article class="film-card">
     <h3 class="film-card__title">${filmInfo.title}</h3>
       <p class="film-card__rating">${filmInfofilm.rating}</p>
@@ -13,7 +13,7 @@ export const createCard = (film) => {
         </p>
         <img src=${filmInfo.poster} alt="" class="film-card__poster">
         <p class="film-card__description">${shortDescription(filmInfo.description, MAX_DESCRIPTION_LENGTH)}</p>
-        <a class="film-card__comments">5 comments</a>
+        <a class="film-card__comments"></a>
         <div class="film-card__controls">
           <button class="film-card__controls-item film-card__controls-item--add-to-watchlist" type="button">Add to watchlist</button>
           <button class="film-card__controls-item film-card__controls-item--mark-as-watched" type="button">Mark as watched</button>

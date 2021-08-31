@@ -5,15 +5,14 @@ import {createCard} from './view/cards.js';
 import {createButton} from './view/button.js';
 import {createPopup} from './view/popup.js';
 import {createFooterStatistic} from './view/footer.js';
-import {getFilmMock} from './mock.js';
 import {moviesData} from './mock.js';
-import dayjs from 'dayjs';  
+import {commentsData} from './mock.js';
+
 
 const render = (container, template, place) => {
   container.insertAdjacentHTML(place, template);
 };
 console.log(moviesData);
-const FILM_COUNT = 15
 const CARDS_COUNT = 5;
 const TOP_CARDS = 2;
 
