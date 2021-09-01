@@ -176,7 +176,7 @@ const getRandomCommentsData = (numberOfComments) => {
   return comments;
 };
 
-export const getRandomFilm = (numberOfMovies) => {
+const getRandomFilm = (numberOfMovies) => {
   const movies = [];
   for (let i = 0; i < numberOfMovies; i++)  {
     movies.push({

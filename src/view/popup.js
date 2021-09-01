@@ -1,10 +1,8 @@
 import {reformatDate} from '../format/format.js';
-import dayjs from 'dayjs';
 
 export const createPopup = (film) => {
-  const {comments, filmInfo, userDetails} = film;
-  const genres = filmInfo.genre.split(' ').length > 1 ? 'Gengres' : 'Genre';
-  `<section class="film-details">
+  const {comments, filmInfo} = film;
+  return `<section class="film-details">
     <form class="film-details__inner" action="" method="get">
       <div class="film-details__top-container">
         <div class="film-details__close">
@@ -71,7 +69,7 @@ export const createPopup = (film) => {
           <button type="button" class="film-details__control-button film-details__control-button--favorite" id="favorite" name="favorite">Add to favorites</button>
         </section>
       </div>
-  
+      
       <div class="film-details__bottom-container">
         <section class="film-details__comments-wrap">
           <h3 class="film-details__comments-title">Comments <span class="film-details__comments-count">${comments.length}</span></h3>
@@ -82,7 +80,7 @@ export const createPopup = (film) => {
                 <img src="./images/emoji/smile.png" width="55" height="55" alt="emoji-smile">
               </span>
               <div>
-                <p class="film-details__comment-text">${comments.text}</p>
+                <p class="film-details__comment-text">${comments.comment}</p>
                 <p class="film-details__comment-info">
                   <span class="film-details__comment-author">${comments.author}</span>
                   <span class="film-details__comment-day">${comments.date}</span>

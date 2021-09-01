@@ -33,3 +33,4 @@ export const movie = {
       favorite: false
     }
   }
+  

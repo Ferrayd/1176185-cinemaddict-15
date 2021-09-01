@@ -12,7 +12,7 @@ import {commentsData} from './mock.js';
 const render = (container, template, place) => {
   container.insertAdjacentHTML(place, template);
 };
-console.log(moviesData);
+console.log(commentsData);
 const CARDS_COUNT = 5;
 const TOP_CARDS = 2;
 
@@ -32,7 +32,7 @@ const containerOne = document.querySelector('.films-list__container-one');
 const containerTwo = document.querySelector('.films-list__container-two');
 const containerThree = document.querySelector('.films-list__container-three');
 
-for (let i = 0; i < moviesData.length; i++) {
+for (let i = 0; i < CARDS_COUNT; i++) {
   render(containerOne, createCard(moviesData[i]), 'afterBegin');
 }
 

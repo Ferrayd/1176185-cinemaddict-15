@@ -3,9 +3,9 @@ import {shortDescription, reformatDate} from '../format/format.js';
 export const createCard = (film) => {
   const MAX_DESCRIPTION_LENGTH = 140;
   const {filmInfo} = film;
-  ` <article class="film-card">
+  return ` <article class="film-card">
     <h3 class="film-card__title">${filmInfo.title}</h3>
-      <p class="film-card__rating">${filmInfofilm.rating}</p>
+      <p class="film-card__rating">${filmInfo.totalRating}</p>
         <p class="film-card__info">
           <span class="film-card__year">${reformatDate(filmInfo.release.date, 'YYYY').slice(-4)}</span>
           <span class="film-card__duration">${filmInfo.duration}</span>
